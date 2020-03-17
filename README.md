@@ -15,6 +15,6 @@ This was a homework assignment where we designed a responsive portfolio with an 
 * Used Bootstrap's grid system (containers, rows, and columns)l
 
 ## Screenshots
-![Screenshot of About page on large-size device](address)
-![Screenshot of Portfolio page on medium-size device](address)
-![Screenshot of About page on small-size device](address)
+![Screenshot of About page on large-size device](https://github.com/aroblesgalit/02-Responsive-Portfolio/blob/master/Assets/Images/screenshot-large.JPG)
+![Screenshot of Portfolio page on medium-size device](https://github.com/aroblesgalit/02-Responsive-Portfolio/blob/master/Assets/Images/screenshot-medium.JPG)
+![Screenshot of About page on small-size device](https://github.com/aroblesgalit/02-Responsive-Portfolio/blob/master/Assets/Images/screenshot-small.JPG)
