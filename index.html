@@ -5,67 +5,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Portfolio</title>
-
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <!-- My CSS -->
-    <link rel="stylesheet" href="myStyle.css">
+    <!-- Style -->
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .headerNav,
+        footer {
+            background-color: #26291A;
+        }
+
+        header,
+        hr {
+            background-color: #B7D437;
+        }
+
+        h1 {
+            font-size: 32px;
+        }
+
+        nav a {
+            color: #fff;
+        }
+
+        a.active,
+        .h3, main a {
+            color: #B7D437;
+        }
+
+        .container {
+            background-color: rgb(14, 15, 10);
+            min-height: 100vh;
+            padding-bottom: 72px;
+        }
+
+        main {
+            background-color: #26291A;
+        }
+
+        footer {
+            border-top: 4px solid #B7D437;
+        }
+    </style>
 </head>
 
-<body class="m-0 p-0" style="background-color:#f5f5f5;">
+<body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-light bg-white py-0 shadow-sm d-flex flex-sm-row flex-column justify-content-sm-between">
-        <!-- Logo -->
-        <h1 class="navbar-brand py-3 px-5 m-0 font-weight-bold" style="background-color:#B7D437; color:#fff; font-size:32px;">Alvin Galit</h1>
-        <ul class="nav justify-content-end py-2">
-            <li class="nav-item">
-                <a class="nav-link active" href="#">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-        </ul>
-    </nav>
+    <div class="container mw-100 position-relative">
 
-    <!-- Main content -->
-    <section class="container mt-4 p-4 shadow-sm bg-white rounded aboutMe">
-        <!-- Heading -->
-        <div class="row">
-            <div class="col-md-12 h3" style="color:#B7D437">
-                About Me
+        <!-- Header with nav -->
+        <div class="row align-items-center headerNav mb-4 shadow-sm">
+
+            <!-- Branding -->
+            <div class="col-sm-12 col-md-4 p-0">
+                <header class="text-center p-3 ml-md-4 text-white">
+                    <h1>Alvin Galit</h1>
+                </header>
+            </div>
+
+            <!-- Nav -->
+            <div class="col-sm-12 col-md-8">
+                <nav class="nav justify-content-md-end justify-content-center">
+                    <a class="nav-link active" href="#">About</a>
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </nav>
             </div>
         </div>
-        <hr class="my-4">
-        <!-- Image and text -->
+
+        <!-- Main Content -->
         <div class="row">
-            <div class="col-lg-4 col-md-6 mb-3">
-                <img class="img img-fluid" src="/Assets/Images/Alvin_headshot_sm.jpg" alt="Me">
-            </div>
-            <div class="col-lg-8 col-md-6">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam odio eius ex molestias, alias cumque asperiores expedita, neque debitis laudantium nobis at accusantium temporibus aut, saepe enim mollitia perferendis aliquam!
-                    Minus cupiditate incidunt quisquam ipsum quibusdam possimus officiis in pariatur distinctio consectetur unde tempore quae, sequi iure suscipit reprehenderit debitis soluta exercitationem rem maxime. Aperiam ipsum deleniti rem dolores facilis?
-                    Deserunt amet recusandae praesentium maxime nemo, accusamus sed quisquam mollitia, atque nulla inventore tempora iusto nihil id porro, numquam molestiae? Ipsam dignissimos magnam, accusamus dolor maiores repellendus similique voluptatem perferendis.
-                    Nulla nobis unde architecto aperiam nam optio minus quaerat corporis voluptatibus. Ut ab mollitia nemo iure, aperiam deserunt beatae voluptate nulla esse quas quasi dignissimos id fuga maiores facilis ea.
-                    Excepturi corporis voluptatum veniam ipsa facilis natus hic ratione sit voluptatibus ab illo placeat, accusantium delectus explicabo doloribus cupiditate. Natus libero necessitatibus obcaecati iusto doloremque earum itaque voluptatem consectetur amet.
-                    Consequatur doloribus, soluta sint vitae ab consectetur repellat assumenda vel, molestias ratione quos libero modi totam illum, repellendus dolor eligendi. Dicta accusantium illum, ex id aliquid facilis at rerum nobis.
-                </p>
+            <div class="col-md-12 col-lg-8 px-4">
+                <main class="p-4 mb-4 clearfix text-light">
+
+                    <!-- Heading -->
+                    <div class="h3">About Me</div>
+                    <hr class="my-4">
+
+                    <!-- My Picture and About Me copy -->
+                    <img class="img img-thumbnail img-responsive float-left mr-4 mb-2"
+                        src="/Assets/Images/Alvin_headshot_sm.jpg" alt="Me">
+                    <p>
+                        Hi. I'm Alvin Galit. I'm currently enrolled in Full Stack Flex (Full time) at the Coding
+                        Bootcamp at UT Austin. My background is in Graphic Design with 4 years of experience in both
+                        agency and in-house. My main focuses are Logo, Print, some UI Design for mobile, web, and
+                        Augmented and Virtual Reality (AR/VR) applications, and currently working on some front-end
+                        development assignment.
+                    </p>
+                    <p>
+                        When I'm not coding or designing flyers, I like to stay active by going to the gym, attending
+                        meetups like Hill Sprint, or hiking with some friends. I also enjoy drawing at a coffee shop
+                        with friends once a week, binging shows or movies on Netflix or Hulu, and playing the ukulele
+                        horribly.
+                    </p>
+                    <p>
+                        Please check out my <a href="portfolio.html">Portfolio</a> page for my most recent projects, 
+                        and feel free to <a href="contact.html">contact</a> me for anything!
+                    </p>
+                </main>
             </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="w-100 mt-4 text-center" style="background-color:#26291A; color:#c0c0c0;">
-        <div class="w-100" style="height:10px; background-color:#B7D437; position-absolute"></div>
-        <p class="p-4 m-0"><small>&copy; 2020 Alvin Galit</small></p>
-    </footer>
+        <!-- Footer -->
+        <div class="row position-absolute w-100" style="bottom:0;">
+            <div class="col-sm-12 p-0">
+                <footer class="footer text-center">
+                    <p class="p-4 m-0 text-white-50"><small>&copy; 2020 Alvin Galit</small></p>
+                </footer>
+            </div>
+        </div>
+
+    </div>
 
 
     <!-- Bootstrap CDN -->

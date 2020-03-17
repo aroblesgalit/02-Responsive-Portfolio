@@ -5,81 +5,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Portfolio</title>
-
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <!-- My CSS -->
-    <link rel="stylesheet" href="myStyle.css">
+    <!-- Style -->
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .headerNav,
+        footer {
+            background-color: #26291A;
+        }
+
+        header,
+        hr {
+            background-color: #B7D437;
+        }
+
+        h1 {
+            font-size: 32px;
+        }
+
+        nav a {
+            color: #fff;
+        }
+
+        a.active,
+        .h3,
+        main a {
+            color: #B7D437;
+        }
+
+        .container {
+            background-color: rgb(14, 15, 10);
+            min-height: 100vh;
+            padding-bottom: 72px;
+        }
+
+        main {
+            background-color: #26291A;
+        }
+
+        footer {
+            border-top: 4px solid #B7D437;
+        }
+
+        .submit-button {
+            background-color: #B7D437;
+            border: none;
+        }
+    </style>
 </head>
 
+<body>
 
+    <div class="container mw-100 position-relative">
 
-<body class="m-0 p-0" style="background-color:#f5f5f5;">
+        <!-- Header with nav -->
+        <div class="row align-items-center headerNav mb-4 shadow-sm">
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-light bg-white py-0 shadow-sm d-flex flex-sm-row flex-column justify-content-sm-between">
-        
-        <!-- Logo -->
-        <h1 class="navbar-brand py-3 px-5 m-0 font-weight-bold"
-            style="background-color:#B7D437; color:#fff; font-size:32px;">Alvin Galit</h1>
-       
-        <!-- Menu -->
-        <ul class="nav justify-content-end py-2">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="#">Contact</a>
-            </li>
-        </ul>
-    </nav>
+            <!-- Branding -->
+            <div class="col-sm-12 col-md-4 p-0">
+                <header class="text-center p-3 ml-md-4 text-white">
+                    <h1>Alvin Galit</h1>
+                </header>
+            </div>
 
-    <!-- Main content -->
-    <section class="container mt-4 p-4 shadow-sm bg-white rounded aboutMe">
-        
-        <!-- Heading -->
-        <div class="row">
-            <div class="col-md-12 h3" style="color:#B7D437">
-                Contact
+            <!-- Nav -->
+            <div class="col-sm-12 col-md-8">
+                <nav class="nav justify-content-md-end justify-content-center">
+                    <a class="nav-link" href="index.html">About</a>
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    <a class="nav-link active" href="#">Contact</a>
+                </nav>
             </div>
         </div>
-        <hr class="my-4">
 
-        <!-- Contact form -->
+        <!-- Main Content -->
         <div class="row">
-            <div class="col-sm-12">
-                <form>
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name"
-                            placeholder="John Smith">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email address</label>
-                        <input type="email" class="form-control" id="email"
-                            placeholder="name@example.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea class="form-control" id="message" rows="4"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary" style="background-color:#B7D437; border:none;">Submit</button>
-                </form>
+            <div class="col-md-12 col-lg-8 px-4">
+                <main class="p-4 mb-4 text-light">
+
+                    <!-- Heading -->
+                    <div class="h3">Contact</div>
+                    <hr class="my-4">
+
+                    <!-- Contact Form -->
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="John Smith">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary text-dark font-weight-bold submit-button">
+                            Submit
+                        </button>
+                    </form>
+                </main>
             </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="w-100 mt-4 text-center sticky-bottom" style="background-color:#26291A; color:#c0c0c0;">
-        <div class="w-100" style="height:10px; background-color:#B7D437; position-absolute"></div>
-        <p class="p-4 m-0"><small>&copy; 2020 Alvin Galit</small></p>
-    </footer>
+        <!-- Footer -->
+        <div class="row position-absolute w-100" style="bottom:0;">
+            <div class="col-sm-12 p-0">
+                <footer class="footer text-center">
+                    <p class="p-4 m-0 text-white-50"><small>&copy; 2020 Alvin Galit</small></p>
+                </footer>
+            </div>
+        </div>
+
+    </div>
 
 
     <!-- Bootstrap CDN -->
