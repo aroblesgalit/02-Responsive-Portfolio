@@ -44,7 +44,8 @@
         }
 
         a.active,
-        .h3, main a {
+        .h3,
+        main a {
             color: #B7D437;
         }
 
@@ -60,6 +61,11 @@
 
         footer {
             border-top: 4px solid #B7D437;
+        }
+
+        .submit-button {
+            background-color: #B7D437;
+            border: none;
         }
     </style>
 </head>
@@ -90,7 +96,23 @@
                 <main class="p-4 mb-4 text-light">
                     <div class="h3">Contact</div>
                     <hr class="my-4">
-
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="John Smith">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary text-dark font-weight-bold submit-button">
+                            Submit
+                        </button>
+                    </form>
                 </main>
             </div>
         </div>
