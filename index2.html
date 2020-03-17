@@ -16,12 +16,17 @@
     <style>
         * {
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
 
         body {
             width: 100%;
-            padding: 0;
-            margin: 0;
+            height: 100%;
+        }
+        
+        .headerNav, footer {
+            background-color: #26291A;
         }
 
         header {
@@ -32,16 +37,35 @@
             color: #fff;
             font-size: 32px;
         }
-        
+
+        nav a {
+
+            color: #fff;
+        }
+
+        a.active {
+            color: #B7D437;
+        }
+
+        .container {
+            background-color:aquamarine;
+            min-height: 100vh;
+        }
+
+        footer {
+            border-top: 4px solid #B7D437;
+            color: #c0c0c0;
+        }
+
     </style>
 </head>
 
 <body>
 
-    <div class="container mw-100">
+    <div class="container mw-100 position-relative">
 
         <!-- Header with nav -->
-        <div class="row bg-dark align-items-center">
+        <div class="row align-items-center headerNav">
             <div class="col-sm-12 col-md-4 p-0">
                 <header class="text-center p-3 ml-md-4">
                     <h1>Alvin Galit</h1>
@@ -64,9 +88,11 @@
         </div>
 
         <!-- Footer -->
-        <div class="row">
-            <div class="col-sm-12">
-                Footer
+        <div class="row position-absolute w-100" style="bottom:0;">
+            <div class="col-sm-12 p-0">
+                <footer class="footer text-center">
+                    <p class="p-4 m-0"><small>&copy; 2020 Alvin Galit</small></p>
+                </footer>
             </div>
         </div>
 
