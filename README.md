@@ -1,24 +1,20 @@
-# 02 Responsive Portfolio
-> Portfolio designed using Bootstrap
+# 08 Professional Materials
+> Updated portfolio, resume, GitHub profile and LinkedIn profile
 
-This was a homework assignment where we designed a responsive portfolio with an About Me, Portfolio, and Contact pages using Bootstrap.
+This was a homework assignment where we updated our responsive portfolio to feature our project 1 and two exemplary homework assignments. We also updated our resume and profiles on GitHub and LinkedIn.
 ## Completed
-* Created the following files files: `index.html`, `portfolio.html` and `contact.html`.
-* Used Bootstrap to develop my portfolio site with the following items:
+* Updated portfolio featuring project 1 and two exemplary homework assignments.
 
-   * A navbar
+* Updated GitHub profile with pinned repositories featuring project 1 and two exemplary assignments.
 
-   * A responsive layout
+* Updated resume.
 
-   * Responsive images
-* Used Bootstrap to minimize the use of media queries.
-* Used Bootstrap's grid system (containers, rows, and columns)l
+* Updated LinkedIn profile.
 
 ## Deployed Portfolio
 [Responsive Portfolio](https://aroblesgalit.github.io/02-Responsive-Portfolio/)
 
 ## Screenshots
-![Screenshot of About page on large-size device]()
-https://github.com/aroblesgalit/02-Responsive-Portfolio/blob/master/Assets/Images/screenshot-large.JPG
-![Screenshot of Portfolio page on medium-size device](https://github.com/aroblesgalit/02-Responsive-Portfolio/blob/master/Assets/Images/screenshot-medium.JPG)
-![Screenshot of About page on small-size device](https://github.com/aroblesgalit/02-Responsive-Portfolio/blob/master/Assets/Images/screenshot-small.JPG)
+![Screenshot of About page on large-size device](https://github.com/aroblesgalit/02-Responsive-Portfolio/blob/master/assets/images/screenshot-large.JPG)
+![Screenshot of Portfolio page on medium-size device](https://github.com/aroblesgalit/02-Responsive-Portfolio/blob/master/assets/images/screenshot-medium.JPG)
+![Screenshot of About page on small-size device](https://github.com/aroblesgalit/02-Responsive-Portfolio/blob/master/assets/images/screenshot-small.JPG)
