@@ -5,141 +5,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Portfolio</title>
-    <!-- Bootstrap CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <!-- Style -->
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            width: 100%;
-            height: 100%;
-        }
-
-        .headerNav,
-        footer {
-            background-color: #26291A;
-        }
-
-        header,
-        hr {
-            background-color: #B7D437;
-        }
-
-        h1 {
-            font-size: 32px;
-        }
-
-        nav a {
-            color: #fff;
-        }
-
-        a.active,
-        .h3, main a {
-            color: #B7D437;
-        }
-
-        .container {
-            background-color: rgb(14, 15, 10);
-            min-height: 100vh;
-            padding-bottom: 72px;
-        }
-
-        main {
-            background-color: #26291A;
-        }
-
-        footer {
-            border-top: 4px solid #B7D437;
-        }
-    </style>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+    <!-- My CSS file -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- My JavaScript file -->
+    <script src=""></script>
 </head>
 
 <body>
 
-    <div class="container mw-100 position-relative">
+    <!-- Header -->
+    <header uk-sticky>
+        <div class="uk-container">
+            <nav class="uk-navbar" uk-navbar>
+                <!-- Branding -->
+                <div class="uk-navbar-left">
+                    <img id="logoMark" src="./assets/images/alvinGalit_logoMark.png" alt="Logo">
+                    <div id="logoType">Alvin Galit</div>
+                </div>
+                <!-- Nav -->
+                <div id="navLinks" class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="#about" uk-scroll>About</a></li>
+                        <li><a href="#portfolio" uk-scroll>Portfolio</a></li>
+                        <li><a href="#contact" uk-scroll>Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-        <!-- Header with nav -->
-        <div class="row align-items-center headerNav mb-4 shadow-sm">
-
-            <!-- Branding -->
-            <div class="col-sm-12 col-md-4 p-0">
-                <header class="text-center p-3 ml-md-4 text-white">
-                    <h1>Alvin Galit</h1>
-                </header>
+    <!-- Home -->
+    <section id="intro">
+        <div class="uk-container uk-flex uk-flex-column uk-flex-middle">
+            <div class="greeting">
+                Hi! I'm Alvin.
             </div>
+            <p class="subHeading">
+                Front-End Web Developer and Graphic Designer, JavaScript, React
+            </p>
+            <img class="myImg" data-src="./assets/images/Alvin_headshot_sm.jpg" width="" height="" alt="Me" uk-img>
+        </div>
+    </section>
 
-            <!-- Nav -->
-            <div class="col-sm-12 col-md-8">
-                <nav class="nav justify-content-md-end justify-content-center">
-                    <a class="nav-link active" href="#">About</a>
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </nav>
+    <!-- About Me section -->
+    <section id="about">
+        <div class="uk-container">
+            <h2 class="uk-text-center">About Me</h2>
+            <p class="uk-text-center">
+                Front-End Web Developer with a Bachelor of Fine Arts in Graphic Design from Cal Poly Pomona and a
+                Certificate in Full Stack Web Development from UT Austin. Skills in HTML, CSS, JavaScript, and React.
+                Strengths in balancing design and functionality, collaboration, and time-management. During the coding
+                bootcamp, I’ve learned a lot of things including working with other web developers from different
+                backgrounds, communicating ideas to the rest of the team, and helping each other reach the goal. I was
+                also able to leverage my skills in graphic design to create good user interfaces. Enrolling in the bootcamp
+                made me realize how much I enjoy coding and seeing my designs come to life. I look forward to leveraging the
+                skills I’ve learned to provide the best solutions to the end users’ problems.
+            </p>
+        </div>
+    </section>
+
+    <!-- Portfolio section -->
+    <section id="portfolio">
+        <div class="uk-container">
+            <h2 class="uk-text-center">Portfolio</h2>
+            <div class="uk-child-width-1-3@m uk-child-width-1-2@s uk-child-width-1-1" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img src="./assets/images/superheroBB.jpg" alt="Screenshot of Superhero Backgorund & Backgrounds application">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Superhero B&B</h3>
+                            <p>A mobile-first application that allows superhero fanatics to view their favorite heroes' informations.</p>
+                            <a class="portfolioLinks" href="https://github.com/cynthia-dm1216/ProjectGroup1" target="_blank">GitHub Repository</a> | <a class="portfolioLinks"
+                                href="https://cynthia-dm1216.github.io/ProjectGroup1/" target="_blank">Deployed Link</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img src="./assets/images/weatherDashboard.jpg" alt="Screenshot of Weather Dashboard application">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Weather Dashboard</h3>
+                            <p>A weather dashboard application that shows the current and future weather information of a city.</p>
+                            <a class="portfolioLinks" href="https://github.com/aroblesgalit/06-Weather-Dashboard" target="_blank">GitHub Repository</a> | <a class="portfolioLinks"
+                                href="https://aroblesgalit.github.io/06-Weather-Dashboard/" target="_blank">Deployed Link</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top">
+                            <img src="./assets/images/workDayScheduler.jpg" alt="Screenshot of Work Day Scheduler application">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Work Day Scheduler</h3>
+                            <p>A simple calendar day scheduler with color coordinated rows for past, present, and futre tasks.</p>
+                            <a class="portfolioLinks" href="https://github.com/aroblesgalit/05-Work-Day-Scheduler" target="_blank">GitHub Repository</a> | <a class="portfolioLinks"
+                                href="https://aroblesgalit.github.io/05-Work-Day-Scheduler/" target="_blank">Deployed Link</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <!-- Main Content -->
-        <div class="row">
-            <div class="col-md-12 col-lg-8 px-4">
-                <main class="p-4 mb-4 clearfix text-light">
-
-                    <!-- Heading -->
-                    <div class="h3">About Me</div>
-                    <hr class="my-4">
-
-                    <!-- My Picture and About Me copy -->
-                    <img class="img img-thumbnail img-responsive float-left mr-4 mb-2"
-                        src="./Assets/Images/Alvin_headshot_sm.jpg" alt="Me">
-                    <p>
-                        Hi. I'm Alvin Galit. I'm currently enrolled in Full Stack Flex (Full time) at the Coding
-                        Bootcamp at UT Austin. My background is in Graphic Design with 4 years of experience in both
-                        agency and in-house. My main focuses are Logo, Print, some UI Design for mobile, web, and
-                        Augmented and Virtual Reality (AR/VR) applications, and currently working on some front-end
-                        development assignment.
-                    </p>
-                    <p>
-                        When I'm not coding or designing flyers, I like to stay active by going to the gym, attending
-                        meetups like Hill Sprint, or hiking with some friends. I also enjoy drawing at a coffee shop
-                        with friends once a week, binging shows or movies on Netflix or Hulu, and playing the ukulele
-                        horribly.
-                    </p>
-                    <p>
-                        Please check out my <a href="portfolio.html">Portfolio</a> page for my most recent projects, 
-                        and feel free to <a href="contact.html">contact</a> me for anything!
-                    </p>
-                </main>
-            </div>
+    <!-- Contact Me section -->
+    <section id="contact">
+        <div class="uk-container">
+            <h2 class="uk-text-center">Contact</h2>
+            <form class="uk-form-stacked">
+                <div class="uk-margin">
+                    <label class="uk-form-label uk-text-muted" for="name">Name</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="name" type="text" placeholder="John Doe">
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label uk-text-muted" for="email">Email</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="email" type="text" placeholder="johndoe@email.com">
+                    </div>
+                </div>
+                <div class="uk-margin">
+                    <label class="uk-form-label uk-text-muted" for="message">Email</label>
+                    <div class="uk-form-controls">
+                        <textarea class="uk-textarea" id="message" rows="5" placeholder="Your message..."></textarea>
+                    </div>
+                </div>
+                <button id="submitBtn" class="uk-button uk-button-default">Submit</button>
+            </form>
         </div>
+    </section>
 
-        <!-- Footer -->
-        <div class="row position-absolute w-100" style="bottom:0;">
-            <div class="col-sm-12 p-0">
-                <footer class="footer text-center">
-                    <p class="p-4 m-0 text-white-50"><small>&copy; 2020 Alvin Galit</small></p>
-                </footer>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="uk-contianer uk-flex uk-flex-column uk-flex-middle">
+            <div class="socialLinks">
+                <a href="https://github.com/aroblesgalit" target="_blank" uk-icon="icon: github"></a>
+                <a href="https://www.linkedin.com/in/aroblesgalit/" target="_blank" uk-icon="icon: linkedin"></a>
             </div>
+            <p class="uk-text-small">&copy; 2020 Alvin Galit</p>
         </div>
-
-    </div>
-
-
-    <!-- Bootstrap CDN -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    </footer>
 
 </body>
 
