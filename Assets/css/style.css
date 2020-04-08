@@ -34,12 +34,26 @@ header {
     margin-left: 12px;
 }
 
-#navLinks a{
+#navLinks a {
     color: var(--color-white);
 }
 
 #navLinks a:hover {
     color: var(--color-green);
+}
+
+#navMenuIcon {
+    color: var(--color-white);
+    display: none;
+    cursor: pointer;
+}
+
+#navMenuIcon:hover {
+    color: var(--color-green);
+}
+
+#navToggle {
+    display: none;
 }
 
 #intro {
@@ -121,6 +135,15 @@ footer {
 
 /* For smaller screens */
 @media only screen and (max-width: 639px) {
+    header {
+        padding: 10px;
+    }
+    #navMenuIcon {
+        display: block;
+    }
+    #navLinksUl {
+        display: none;
+    }
     .greeting {
         line-height: 1;
     }
