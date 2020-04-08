@@ -28,8 +28,8 @@
             <nav class="uk-navbar" uk-navbar>
                 <!-- Branding -->
                 <div class="uk-navbar-left">
-                    <img src="" alt="Logo">
-                    <div class="logoType">Alvin Galit</div>
+                    <img id="logoMark" src="./assets/images/alvinGalit_logoMark.png" alt="Logo">
+                    <div id="logoType">Alvin Galit</div>
                 </div>
                 <!-- Nav -->
                 <div id="navLinks" class="uk-navbar-right">
@@ -44,30 +44,30 @@
     </header>
 
     <!-- Home -->
-    <section id="intro" class="uk-flex uk-flex-column uk-flex-middle">
-        <div class="greeting">
-            Hi! I'm Alvin.
+    <section id="intro">
+        <div class="uk-container uk-flex uk-flex-column uk-flex-middle">
+            <div class="greeting">
+                Hi! I'm Alvin.
+            </div>
+            <p class="subHeading">
+                Front-End Web Developer and Graphic Designer, JavaScript, React
+            </p>
+            <img class="myImg" data-src="./assets/images/Alvin_headshot_sm.jpg" width="" height="" alt="Me" uk-img>
         </div>
-        <p class="subHeading">
-            Front-End Web Developer and Graphic Designer, JavaScript, React
-        </p>
-        <img class="myImg" data-src="./assets/images/Alvin_headshot_sm.jpg" width="" height="" alt="Me" uk-img>
     </section>
 
     <!-- About Me section -->
     <section id="about">
         <div class="uk-container">
             <h2 class="uk-text-center">About Me</h2>
-            <p>
+            <p class="uk-text-center">
                 Front-End Web Developer with a Bachelor of Fine Arts in Graphic Design from Cal Poly Pomona and a
                 Certificate in Full Stack Web Development from UT Austin. Skills in HTML, CSS, JavaScript, and React.
                 Strengths in balancing design and functionality, collaboration, and time-management. During the coding
                 bootcamp, I’ve learned a lot of things including working with other web developers from different
                 backgrounds, communicating ideas to the rest of the team, and helping each other reach the goal. I was
-                also
-                able to leverage my skills in graphic design to create good user interfaces. Enrolling in the bootcamp
-                made
-                me realize how much I enjoy coding and seeing my designs come to life. I look forward to leveraging the
+                also able to leverage my skills in graphic design to create good user interfaces. Enrolling in the bootcamp
+                made me realize how much I enjoy coding and seeing my designs come to life. I look forward to leveraging the
                 skills I’ve learned to provide the best solutions to the end users’ problems.
             </p>
         </div>
@@ -127,31 +127,35 @@
             <h2 class="uk-text-center">Contact</h2>
             <form class="uk-form-stacked">
                 <div class="uk-margin">
-                    <label class="uk-form-label" for="name">Name</label>
+                    <label class="uk-form-label uk-text-muted" for="name">Name</label>
                     <div class="uk-form-controls">
                         <input class="uk-input" id="name" type="text" placeholder="John Doe">
                     </div>
                 </div>
                 <div class="uk-margin">
-                    <label class="uk-form-label" for="email">Email</label>
+                    <label class="uk-form-label uk-text-muted" for="email">Email</label>
                     <div class="uk-form-controls">
                         <input class="uk-input" id="email" type="text" placeholder="johndoe@email.com">
                     </div>
                 </div>
                 <div class="uk-margin">
-                    <label class="uk-form-label" for="message">Email</label>
+                    <label class="uk-form-label uk-text-muted" for="message">Email</label>
                     <div class="uk-form-controls">
                         <textarea class="uk-textarea" id="message" rows="5" placeholder="Your message..."></textarea>
                     </div>
                 </div>
-
+                <button id="submitBtn" class="uk-button uk-button-default">Submit</button>
             </form>
         </div>
     </section>
 
     <!-- Footer -->
     <footer id="footer">
-        <div class="uk-contianer uk-flex uk-flex-center">
+        <div class="uk-contianer uk-flex uk-flex-column uk-flex-middle">
+            <div class="socialLinks">
+                <a href="https://github.com/aroblesgalit" target="_blank" uk-icon="icon: github"></a>
+                <a href="https://www.linkedin.com/in/aroblesgalit/" target="_blank" uk-icon="icon: linkedin"></a>
+            </div>
             <p class="uk-text-small">&copy; 2020 Alvin Galit</p>
         </div>
     </footer>
