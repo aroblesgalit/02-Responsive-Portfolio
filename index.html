@@ -28,7 +28,7 @@
             <nav class="uk-navbar" uk-navbar>
                 <!-- Branding -->
                 <div class="uk-navbar-left">
-                    <img id="logoMark" src="./assets/images/alvinGalit_logoMark.png" alt="Logo">
+                    <a href="./index.html"><img id="logoMark" src="./assets/images/alvinGalit_logoMark.png" alt="Logo"></a>
                     <div id="logoType">Alvin Galit</div>
                 </div>
                 <!-- Nav -->
@@ -57,12 +57,12 @@
     <section id="intro">
         <div class="uk-container uk-flex uk-flex-column uk-flex-middle">
             <div class="greeting">
-                Hi! I'm Alvin.
+                Hello! I'm <span>Alvin</span>.
             </div>
             <p class="subHeading">
                 Front-End Web Developer and Graphic Designer, JavaScript, React
             </p>
-            <img class="myImg" data-src="./assets/images/Alvin_headshot_sm.jpg" width="" height="" alt="Me" uk-img>
+            <img class="myImg uk-border-circle" data-src="./assets/images/Alvin_headshot_sm.jpg" width="" height="" alt="Me" uk-img>
         </div>
     </section>
 
@@ -135,33 +135,48 @@
     <section id="contact">
         <div class="uk-container">
             <h2 class="uk-text-center">Contact</h2>
-            <form class="uk-form-stacked">
-                <div class="uk-margin">
-                    <label class="uk-form-label uk-text-muted" for="name">Name</label>
-                    <div class="uk-form-controls">
-                        <input class="uk-input" id="name" type="text" placeholder="John Doe">
-                    </div>
+            <div class="contact-form uk-child-width-1-2@m" uk-grid>
+                <div class="contactInfo uk-flex uk-flex-column uk-margin-bottom">
+                    <span class="contactLabel uk-text-muted uk-form-label">Email</span>
+                    <span class="contactDesc uk-flex uk-flex-middle"><span class="contactIcon" uk-icon="icon: mail"></span>aroblesgalit@gmail.com</span>
+                    <span class="contactLabel uk-text-muted uk-form-label">Phone</span>
+                    <span class="contactDesc uk-flex uk-flex-middle"><span class="contactIcon" uk-icon="icon: phone"></span>714.949.1232</span>
+                    <span class="contactLabel uk-text-muted uk-form-label">LinkedIn</span>
+                    <span class="contactDesc uk-flex uk-flex-middle"><span class="contactIcon" uk-icon="icon: linkedin"></span><a href="https://www.linkedin.com/in/aroblesgalit/" target="_blank">linkedin.com/in/aroblesgalit</a></span>
+                    <span class="contactLabel uk-text-muted uk-form-label">GitHub</span>
+                    <span class="contactDesc uk-flex uk-flex-middle"><span class="contactIcon" uk-icon="icon: github"></span><a href="https://github.com/aroblesgalit" target="_blank">github.com/aroblesgalit</a></span>
+                    <hr class="uk-divider-small">
                 </div>
-                <div class="uk-margin">
-                    <label class="uk-form-label uk-text-muted" for="email">Email</label>
-                    <div class="uk-form-controls">
-                        <input class="uk-input" id="email" type="text" placeholder="johndoe@email.com">
+                <form class="uk-form-stacked uk-position-relative">
+                    <div class="uk-margin">
+                        <label class="uk-form-label uk-text-muted" for="name">Name</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="name" type="text" placeholder="John Doe">
+                        </div>
                     </div>
-                </div>
-                <div class="uk-margin">
-                    <label class="uk-form-label uk-text-muted" for="message">Email</label>
-                    <div class="uk-form-controls">
-                        <textarea class="uk-textarea" id="message" rows="5" placeholder="Your message..."></textarea>
+                    <div class="uk-margin">
+                        <label class="uk-form-label uk-text-muted" for="email">Email</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" id="email" type="text" placeholder="johndoe@email.com">
+                        </div>
                     </div>
-                </div>
-                <button id="submitBtn" class="uk-button uk-button-default">Submit</button>
-            </form>
+                    <div class="uk-margin">
+                        <label class="uk-form-label uk-text-muted" for="message">Email</label>
+                        <div class="uk-form-controls">
+                            <textarea class="uk-textarea" id="message" rows="5" placeholder="Your message..."></textarea>
+                        </div>
+                    </div>
+                    <button id="submitBtn" class="uk-button uk-button-default uk-position-absolute uk-position-bottom-right">Submit</button>
+                </form>
+            </div>
+
         </div>
     </section>
 
     <!-- Footer -->
     <footer id="footer">
         <div class="uk-contianer uk-flex uk-flex-column uk-flex-middle">
+            <hr class="uk-divider-small">
             <div class="socialLinks">
                 <a href="https://github.com/aroblesgalit" target="_blank" uk-icon="icon: github"></a>
                 <a href="https://www.linkedin.com/in/aroblesgalit/" target="_blank" uk-icon="icon: linkedin"></a>
