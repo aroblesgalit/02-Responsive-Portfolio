@@ -34,11 +34,11 @@ header {
     margin-left: 12px;
 }
 
-#navLinks a {
+#navLinks a, #navToggle a {
     color: var(--color-white);
 }
 
-#navLinks a:hover {
+#navLinks a:hover, #navToggle a:hover {
     color: var(--color-green);
 }
 
@@ -137,6 +137,9 @@ footer {
 @media only screen and (max-width: 639px) {
     header {
         padding: 10px;
+    }
+    #logoType {
+        display: none;
     }
     #navMenuIcon {
         display: block;
