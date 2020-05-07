@@ -1,5 +1,27 @@
 $(document).ready(function () {
 
+    let i = 0;
+    let greetingHtml = $(".greeting").html();
+    
+    printIntro();
+    // Intro animation
+    function printIntro() {
+        const greetingText = "Hello! I'm <span>Alvin</span>.";
+        // const greetingArr = greetingText.split("");
+
+        const printInterval = setInterval(function() {
+
+            if (greetingText[i] == undefined) {
+                clearInterval(printInterval);
+            } else {
+                $(".greeting").html(greetingHtml += greetingText[i]);
+                i++;
+            }
+
+        }, 100);
+    }
+    
+
     const navToggle = $("#navToggle");
     let isDisplay = false;
 
